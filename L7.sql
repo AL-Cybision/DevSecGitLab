@@ -1,8 +1,6 @@
 -- Create a new table called 'tblEmployee' in schema 'SchemaName'
 -- Drop the table if it already exists
-IF OBJECT_ID('tblEmployee', 'U') IS NOT NULL
-DROP TABLE tblEmployee
-GO
+
 -- Create the table in the specified schema
 CREATE TABLE tblEmployee
 (
@@ -64,8 +62,6 @@ INSERT into tblDepartment
 VALUES(10, 'Marketing', 'Karachi');
 
 -- DELETE FROM tblEmployee WHERE lastName='Sharif' AND departID=NULL
-SELECT *
-FROM tblEmployee
 
 -- Exercise 1 Inner Join a.k.a Join
 SELECT
